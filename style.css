@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #33a0dc;
+  --primary-hover-color: #288cc6;
+  --focus-outline-color: #228cc6;
+  --card-bg-color: white;
+  --text-gray: gray;
+  --border-radius-card: 8px;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.15);
+  --transition-fast: 0.4s ease-in-out;
+  --transition-smooth: 0.2s ease-in-out;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  margin: 0;
+}
+.pd-20 {
+  padding: 20px;
+}
+h1 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.grid-container {
+  display: grid;
+  /* grid-template-rows: 150px 200px; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1125px;
+  margin: auto;
+}
+.bg-color {
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius-card);
+  padding-left: 20px;
+  padding-bottom: 20px;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition-fast), var(--transition-fast);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.bg-color:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
+}
+.bg-color:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--primary-color);
+}
+.cs-pointer {
+  cursor: pointer;
+}
+.bg-color p {
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+button {
+  background-color: var(--primary-color);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color var(--transition-fast), var(--transition-smooth);
+  display: block;
+  margin-top: auto;
+  margin-right: auto;
+}
+button:hover {
+  background-color: var(--primary-hover-color);
+  transform: scale(1.05);
+}
+button:focus {
+  outline: 3px dashed var(--focus-outline-color);
+  outline-offset: 4px;
+}
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .bg-color {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+@media (min-width: 641px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+  }
+  .bg-color {
+    width: 100%;
+  }
+}
