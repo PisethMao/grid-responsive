@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Responsive</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="shortcut icon"
+      href="./Images/istad-lms-logo.webp"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="bg-gray-100 p-5">
+    <header class="text-center text-3xl font-semibold mb-10">
+      <h1>Responsive Card Layout</h1>
+    </header>
+    <main class="flex flex-wrap justify-center gap-5 max-w-6xl mx-auto">
+      <section
+        class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 p-6 cursor-pointer relative duration-300 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-1.5 before:bg-[#33a0dc] before:opacity-0 hover:before:opacity-100 w-[85%] md:w-[30%] max-w-[340px] sm:max-w-[380px]"
+      >
+        <h2 class="text-xl font-semibold mb-2">Card 1</h2>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          This is a responsive card that adjusts its layout based on screen
+          size. On small screens, cards stack vertically. On medium screens,
+          three cards appear per row.
+        </p>
+        <button
+          type="button"
+          style="background-color: #33a0dc"
+          class="text-white px-4 py-1.75 rounded focus:outline-dashed focus:outline-2 focus:outline-offset-4 text-sm font-medium hover:opacity-90 focus:outline-[#288cc6] bg-[#33a0dc] hover:bg-[#288cc6] transition w-fit cursor-pointer duration-300 transform hover:scale-105"
+        >
+          Learn More
+        </button>
+      </section>
+      <section
+        class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 p-6 flex flex-col justify-between min-h-[180px] w-[85%] md:w-[30%] max-w-[340px] sm:max-w-[380px]"
+      >
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Card 2</h2>
+          <p class="text-gray-600 mb-4 leading-relaxed">
+            The flexbox layout makes it easy to create responsive designs. The
+            cards automatically wrap to the next line when there's not enough
+            space.
+          </p>
+        </div>
+        <button
+          type="button"
+          style="background-color: #33a0dc"
+          class="text-white px-4 py-1.5 rounded focus:outline-dashed focus:outline-2 focus:outline-offset-4 text-sm font-medium hover:opacity-90 focus:outline-[#288cc6] bg-[#33a0dc] hover:bg-[#288cc6] transition w-fit cursor-pointer duration-300 transform hover:scale-105"
+        >
+          Read Details
+        </button>
+      </section>
+      <section
+        class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 p-6 flex flex-col justify-between min-h-[180px] w-[85%] md:w-[30%] max-w-[340px] sm:max-w-[380px]"
+      >
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Card 3</h2>
+          <p class="text-gray-600 mb-4 leading-relaxed">
+            Media queries help us define different styles for different screen
+            sizes. This ensures a great user experience across all devices.
+          </p>
+        </div>
+        <button
+          type="button"
+          style="background-color: #33a0dc"
+          class="text-white px-4 py-1.5 rounded focus:outline-dashed focus:outline-2 focus:outline-offset-4 text-sm font-medium hover:opacity-90 focus:outline-[#288cc6] bg-[#33a0dc] hover:bg-[#288cc6] transition w-fit cursor-pointer duration-300 transform hover:scale-105"
+        >
+          Explore More
+        </button>
+      </section>
+      <section
+        class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 p-6 cursor-pointer relative duration-300 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-1.5 before:bg-[#33a0dc] before:opacity-0 hover:before:opacity-100 w-[85%] md:w-[30%] max-w-[340px] sm:max-w-[380px]"
+      >
+        <h2 class="text-xl font-semibold mb-2">Card 4</h2>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          With this layout, you can easily add more cards and they will
+          automatically arrange themselves according to the screen size.
+        </p>
+        <button
+          type="button"
+          style="background-color: #33a0dc"
+          class="text-white px-4 py-1.75 rounded focus:outline-dashed focus:outline-2 focus:outline-offset-4 text-sm font-medium hover:opacity-90 focus:outline-[#288cc6] bg-[#33a0dc] hover:bg-[#288cc6] transition w-fit cursor-pointer duration-300 transform hover:scale-105"
+        >
+          Get Started
+        </button>
+      </section>
+      <section
+        class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 p-6 flex flex-col justify-between min-h-[180px] w-[85%] md:w-[30%] max-w-[340px] sm:max-w-[380px]"
+      >
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Card 5</h2>
+          <p class="text-gray-600 mb-4 leading-relaxed">
+            The gap property in flexbox creates consistent spacing between cards
+            without needing margin calculations.
+          </p>
+        </div>
+        <button
+          type="button"
+          style="background-color: #33a0dc"
+          class="text-white px-4 py-1.5 rounded focus:outline-dashed focus:outline-2 focus:outline-offset-4 text-sm font-medium hover:opacity-90 focus:outline-[#288cc6] bg-[#33a0dc] hover:bg-[#288cc6] transition w-fit cursor-pointer duration-300 transform hover:scale-105"
+        >
+          View Demo
+        </button>
+      </section>
+      <section
+        class="bg-white rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 p-6 flex flex-col justify-between min-h-[180px] w-[85%] md:w-[30%] max-w-[340px] sm:max-w-[380px]"
+      >
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Card 6</h2>
+          <p class="text-gray-600 mb-4 leading-relaxed">
+            This responsive design ensures your content looks great on mobile,
+            tablet, and desktop devices.
+          </p>
+        </div>
+        <button
+          type="button"
+          style="background-color: #33a0dc"
+          class="text-white px-4 py-1.5 rounded focus:outline-dashed focus:outline-2 focus:outline-offset-4 text-sm font-medium hover:opacity-90 focus:outline-[#288cc6] bg-[#33a0dc] hover:bg-[#288cc6] transition w-fit cursor-pointer duration-300 transform hover:scale-105"
+        >
+          Contact Us
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
